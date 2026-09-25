@@ -1,0 +1,12 @@
+*.tif
+*.tiff
+*.h5
+*.pkl
+01_data/raw/
+__pycache__/
+*.pyc
+.env
+venv/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
