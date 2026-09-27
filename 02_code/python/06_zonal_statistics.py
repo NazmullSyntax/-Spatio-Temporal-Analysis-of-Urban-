@@ -28,7 +28,7 @@ for year in tqdm(years, desc="Processing years"):
     year_data = {'grid_id': grid['grid_id'].values, 'Year': year}
     
     for index in indices:
-        raster_path = f"01_data/raw/processed_rasters/{index}_{year}_seasonal.tif"
+        raster_path = f"01_data/raw/processed_rasters/{index}_{year}_masked.tif"
         
         if not os.path.exists(raster_path):
             print(f"⚠️  Missing: {raster_path}")
