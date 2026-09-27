@@ -32,3 +32,20 @@ projects/dhaka-green-space-thesis/assets/dhaka_boundary_shp
 - Extract zonal statistics per grid cell
 - Build master CSV
 - Write Chapter 1.5 (Objectives)
+
+## Day 5
+### Done
+- Population data merged (10.5M → 23M)
+- Correlation analysis complete
+- Regression: LST ~ NDVI + NDBI
+- Time trends computed
+- Scatter plots + time series plots created
+- Chapter 1.5 written
+### Key Findings
+- LST trend: X.XXXX °C/year
+- NDVI trend: X.XXXXX/year
+- Correlation NDVI-LST: r = X.XXX
+- Correlation NDBI-LST: r = X.XXX
+### Next (Day 6)
+- Machine learning prediction
+- 2030 scenario modeling
