@@ -4,7 +4,7 @@ Dep. Variable:                    LST   R-squared:                       0.522
 Model:                            OLS   Adj. R-squared:                  0.522
 Method:                 Least Squares   F-statistic:                     5303.
 Date:                Mon, 28 Sep 2026   Prob (F-statistic):               0.00
-Time:                        03:35:16   Log-Likelihood:                -15958.
+Time:                        03:42:59   Log-Likelihood:                -15958.
 No. Observations:                9726   AIC:                         3.192e+04
 Df Residuals:                    9723   BIC:                         3.194e+04
 Df Model:                           2                                         
