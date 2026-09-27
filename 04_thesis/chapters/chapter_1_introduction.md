@@ -17,3 +17,39 @@ These environmental changes also raise questions about human well-being and the 
 ## 1.2 Problem Statement
 
 [To be written tomorrow]
+
+
+## 1.5 Objectives
+
+This study pursues five specific objectives aligned with the research questions:
+
+**Objective 1: Quantify Green Space Change**
+To quantify changes in urban green space in Dhaka District from 2000 to 
+2025 using NDVI derived from Landsat satellite imagery, with attention 
+to data limitations inherent in low-NDVI urban environments.
+
+**Objective 2: Analyze Built-up Expansion**
+To analyze the expansion of built-up areas using NDBI and characterize 
+the relationship between green space loss and urbanization.
+
+**Objective 3: Examine the Green Space–Temperature Relationship**
+To examine the statistical and spatial relationship between green space 
+and land surface temperature (both daytime and nighttime) using 
+correlation and regression analysis.
+
+**Objective 4: Assess Population Exposure**
+To identify and quantify population exposure to elevated urban heat in 
+Dhaka, focusing on areas where green space loss has been most pronounced.
+
+**Objective 5: Predict 2030 Scenario**
+To develop a machine-learning-based prediction of green space and land 
+surface temperature conditions for Dhaka in 2030 under a business-as-usual 
+scenario.
+
+### Note on Data Limitations
+
+Preliminary analysis reveals that Dhaka District exhibits low NDVI values 
+(mean 0.10–0.18) due to its already high level of urbanization. This is 
+consistent with published literature on South Asian megacities. The 
+research therefore focuses on relative trends rather than absolute values, 
+and explicitly acknowledges this limitation throughout the analysis.
