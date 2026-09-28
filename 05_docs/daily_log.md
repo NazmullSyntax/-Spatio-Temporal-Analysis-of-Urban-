@@ -49,3 +49,31 @@ projects/dhaka-green-space-thesis/assets/dhaka_boundary_shp
 ### Next (Day 6)
 - Machine learning prediction
 - 2030 scenario modeling
+
+
+## Day 6
+### Done
+- Trained Random Forest, XGBoost, Gradient Boosting
+- Compared model performance (R², MAE, RMSE)
+- Feature importance analysis complete
+- Saved best model (03_results/models/best_model_lst.pkl)
+- Chapter 1.6 written
+
+### Key Results (fill in after running)
+- Best model: [name]
+- Best R²: [value]
+- Top feature: [name]
+- Second feature: [name]
+- Third feature: [name]
+
+### Files Created
+- 03_results/tables/model_comparison.csv
+- 03_results/tables/feature_importance.csv
+- 03_results/figures/feature_importance.png
+- 03_results/figures/actual_vs_predicted.png
+
+### Next (Day 7)
+- Load best model
+- Predict 2030 NDVI, NDBI, LST
+- Create 2030 prediction maps
+- Compare 2025 vs 2030
