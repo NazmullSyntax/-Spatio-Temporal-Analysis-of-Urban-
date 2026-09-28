@@ -137,3 +137,89 @@ This study does not claim to:
 
 It provides environmental exposure evidence that can inform, but not 
 replace, detailed epidemiological and economic studies.
+
+
+## 1.7 Scope and Limitations
+
+### Scope of the Study
+
+**Geographic Scope**
+The study covers Dhaka District, Bangladesh (approximately 1,463 km²) — 
+the administrative district containing Bangladesh's capital and largest 
+metropolitan area, home to over 22 million people. All major urban zones 
+are included: Uttara, Mirpur, Gulshan, Banani, Dhanmondi, Motijheel, 
+Old Dhaka, Savar, Keraniganj, and surrounding areas. The 500m × 500m 
+analysis grid contains 6,315 cells, providing comprehensive spatial 
+coverage.
+
+**Temporal Scope**
+- Historical analysis: 2000–2025 (6 time points)
+- Prediction: 2030 (5-year forward scenario)
+
+**Thematic Scope**
+- Urban green space (NDVI)
+- Built-up intensity (NDBI)
+- Land surface temperature (daytime and nighttime)
+- Population exposure
+- Health and economic implications (association-based)
+
+### Limitations
+
+**Data Limitations**
+
+1. **Spatial resolution**: Landsat's 30m resolution may miss small urban 
+   green spaces. Mixed pixels in dense urban areas reduce vegetation 
+   detection accuracy.
+
+2. **Low NDVI values**: Dhaka's NDVI values (0.10–0.18) are lower than 
+   typical vegetated regions. This reflects its high urban density and 
+   limits detection of subtle changes.
+
+3. **Temporal sampling**: Six time points (5-year intervals) may miss 
+   interannual variability.
+
+4. **Nighttime LST resolution**: MODIS 1km resolution is coarser than 
+   Landsat. About 74% of grid cells lacked direct LST_Night coverage; 
+   these were filled using cell-level and year-level averages.
+
+**Methodological Limitations**
+
+1. **Statistical power**: With only 6 time points, temporal trends have 
+   limited statistical significance despite clear directional change.
+
+2. **Causation vs. association**: All reported relationships are 
+   statistical associations. Satellite data cannot establish causation.
+
+3. **Model generalization**: Machine learning models trained on past 
+   data assume continuation of current patterns.
+
+**Health and Economic Limitations**
+
+1. **Health data**: Ward-level health outcome data are not publicly 
+   available for Dhaka. Health analysis uses environmental exposure 
+   quantification with literature-based estimates.
+
+2. **Economic data**: Household-level data are only available for survey 
+   years. Analysis uses district-level or national proxies.
+
+3. **Exposure ≠ outcome**: Environmental exposure does not directly 
+   predict health outcomes — individual vulnerability matters.
+
+**Prediction Uncertainty**
+
+1. **Model uncertainty**: R² = 0.74 leaves 26% of LST variation unexplained.
+
+2. **Scenario uncertainty**: 2030 prediction assumes business-as-usual.
+
+3. **Extrapolation risk**: Predicting 5 years beyond last data introduces 
+   moderate uncertainty.
+
+### How Limitations Are Addressed
+
+All findings are framed as:
+- "Associations" rather than "causes"
+- "Potential burden" rather than "observed impacts"
+- "Model-based scenarios" rather than "future facts"
+
+Data limitations are documented explicitly. All code and data processing 
+steps are reproducible via GitHub.
