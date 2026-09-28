@@ -77,3 +77,29 @@ projects/dhaka-green-space-thesis/assets/dhaka_boundary_shp
 - Predict 2030 NDVI, NDBI, LST
 - Create 2030 prediction maps
 - Compare 2025 vs 2030
+
+## Day 7 (Complete)
+### Done
+- Fixed data coverage to 6,315 cells (100%)
+- Retrained Gradient Boosting (R² = 0.739)
+- Generated 2030 prediction for all grid cells
+- Computed uncertainty bounds
+- Created 2030 prediction maps
+- Chapter 1.7 written
+
+### Key Findings
+- 2025 mean LST: 26.28°C
+- 2030 predicted: 26.53°C
+- Change: +0.25°C
+- 95% CI: [26.52, 26.55]
+- Nighttime warming +1.94°C (larger than daytime +1.24°C)
+
+### Files Created
+- 03_results/prediction_2030.csv (6315 rows)
+- 03_results/maps/prediction_2030_vs_2025.png
+- 03_results/figures/lst_2025_vs_2030_distribution.png
+
+### Next (Day 8)
+- Population exposure analysis
+- Heat risk zones
+- Health/economic associations
