@@ -131,3 +131,31 @@ projects/dhaka-green-space-thesis/assets/dhaka_boundary_shp
 - Health association analysis
 - Economic association analysis
 - Complete Chapter 2
+## Day 8
+### Done
+- Population exposure analysis (2025 vs 2030)
+- Heat class categorization
+- Threshold-based exposure (>28°C, >30°C)
+- Top 20 hotspot cells identified
+- 2 heat maps created
+- Chapter 2 started
+
+### Key Findings
+- Population > 30°C in 2025: 233,571 (0.9%)
+- Population > 30°C in 2030: 352,336 (1.4%)
+- Change: +118,765 (+51%)
+- Extreme heat zones (2030): ___ cells
+
+### Files Created
+- 03_results/tables/population_exposure.csv
+- 03_results/tables/heat_exposure_2025.csv
+- 03_results/tables/heat_exposure_2030.csv
+- 03_results/tables/top_hotspot_cells_2030.csv
+- 03_results/maps/heat_exposure_2025_vs_2030.png
+- 03_results/maps/heat_zones_2030.png
+- 04_thesis/chapters/chapter2_literature.md
+
+### Next (Day 9)
+- Health association analysis (literature-based)
+- Economic association analysis
+- Chapter 2 completion
