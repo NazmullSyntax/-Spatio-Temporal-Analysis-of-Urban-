@@ -159,3 +159,28 @@ projects/dhaka-green-space-thesis/assets/dhaka_boundary_shp
 - Health association analysis (literature-based)
 - Economic association analysis
 - Chapter 2 completion
+
+## Day 9 (Complete)
+### Done
+- Health impact estimation (literature-based)
+- Economic burden calculation
+- Health exposure maps
+- Chapter 2 expanded
+
+### Key Estimates (2030)
+- Population exposed >30°C: 352,336 (+51% from 2025)
+- Heat-related deaths: 18/year
+- Heat-related hospitalizations: 177/year
+- Heat-related ED visits: 729/year
+- Economic burden: $185.9M USD/year
+- Per capita: $7.43 USD/person/year
+
+### Files Created
+- 03_results/tables/health_burden.csv
+- 03_results/tables/economic_burden_2030.csv
+- 03_results/maps/health_exposure_maps.png
+- 05_docs/day9_impact_summary.md
+
+### Next (Day 10)
+- Chapter 3 (Methodology)
+- Complete methodology documentation

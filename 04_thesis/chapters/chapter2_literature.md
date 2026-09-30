@@ -152,3 +152,57 @@ The literature establishes:
 This thesis builds on this foundation by integrating long-term 
 analysis, multi-index assessment, and predictive modeling to 
 provide evidence for urban planning in Dhaka.
+
+### Heat-Health Evidence in South Asia
+
+Recent epidemiological studies in South Asia have established 
+significant heat-health associations:
+
+- **India (Ahmedabad)**: Heat Action Plan reduced mortality by 25% 
+  through early warning systems (Hess et al., 2018)
+- **Pakistan (Karachi)**: 2015 heatwave caused 1,200+ deaths — 
+  cities with less green space had higher mortality (Ghani et al., 2016)
+- **Bangladesh**: Heat-related hospital admissions increase 8–15% 
+  during heatwaves (Rahman et al., 2019)
+
+### Vulnerable Populations
+
+Heat vulnerability is not evenly distributed:
+- Outdoor workers (construction, rickshaw pullers, street vendors)
+- Elderly populations (>65)
+- Children under 5
+- Low-income residents in informal settlements
+- People with pre-existing cardiovascular or respiratory conditions
+
+(Source: WHO, 2021; ILO, 2019)
+
+### Estimating Heat-Related Health Burden
+
+Direct measurement of heat-related health outcomes requires 
+individual-level data, which is not publicly available for Dhaka. 
+This study uses an alternative approach: published exposure-response 
+coefficients applied to spatially resolved heat exposure data. This 
+method is standard in environmental epidemiology when primary data 
+is unavailable (Gasparrini et al., 2015).
+
+### Global Economic Estimates
+
+- **ILO (2019)**: 2.2% of total working hours lost globally due to 
+  heat stress by 2030 — equivalent to 80 million full-time jobs
+- **South Asia**: Expected to lose 5.3% of working hours by 2030
+- **Dhaka specifically**: Cooling demand has grown 30%+ over the 
+  last decade (BPDB Annual Reports)
+
+### Pathways of Economic Impact
+
+1. **Direct energy costs**: Higher cooling demand
+2. **Productivity**: Reduced outdoor work capacity
+3. **Health system**: Increased hospital admissions
+4. **Infrastructure**: Accelerated degradation of roads, buildings
+5. **Water**: Increased evaporation and demand
+
+### Estimation Approach in This Study
+
+This study uses literature-based coefficients to estimate economic 
+burden. Values should be interpreted as indicative rather than 
+definitive, given the assumptions involved and data limitations.
