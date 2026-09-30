@@ -103,3 +103,31 @@ projects/dhaka-green-space-thesis/assets/dhaka_boundary_shp
 - Population exposure analysis
 - Heat risk zones
 - Health/economic associations
+
+## Day 8
+### Done
+- Population exposure analysis for 2025 and 2030
+- Heat class categorization (Low, Moderate, High, Extreme)
+- Population exposed to >28°C and >30°C thresholds
+- Top 20 hotspot cells identified
+- Heat exposure maps created (2 maps)
+- Chapter 2 (Literature Review) drafted (2000+ words)
+
+### Key Findings (fill from output)
+- Population > 28°C: 2025 = ___, 2030 = ___
+- Population > 30°C: 2025 = ___, 2030 = ___
+- Extreme heat zones: ___ cells
+
+### Files Created
+- 03_results/tables/heat_exposure_2025.csv
+- 03_results/tables/heat_exposure_2030.csv
+- 03_results/tables/population_exposure.csv
+- 03_results/tables/top_hotspot_cells_2030.csv
+- 03_results/maps/heat_exposure_2025_vs_2030.png
+- 03_results/maps/heat_zones_2030.png
+- 04_thesis/chapters/chapter2_literature.md
+
+### Next (Day 9)
+- Health association analysis
+- Economic association analysis
+- Complete Chapter 2
