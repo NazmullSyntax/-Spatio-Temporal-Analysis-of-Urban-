@@ -17,3 +17,4 @@ NDBI importance	55%
 Population exposed >30°C by 2030	352,336 (+51%)
 Health burden (2030)	18 deaths, 177 hospitalizations, 729 ED visits
 Economic burden (2030)	$186M USD/year ($7.43/person)
+![alt text](image.png)
