@@ -603,3 +603,31 @@ While the methods are standard in the global urban heat literature,
 their application to Dhaka with this scope is novel. The findings 
 contribute Dhaka-specific evidence to the global conversation on 
 urban heat.
+
+
+### 5.14 Future Research Directions
+
+**1. Higher resolution analysis**
+Sentinel-2 (10m) could resolve small green spaces missed by Landsat.
+
+**2. Continuous time series**
+Annual or monthly composites would capture interannual variability.
+
+**3. Ground-based validation**
+Measurements from weather stations would validate satellite LST.
+
+**4. Health data integration**
+If ward-level health data become available, direct epidemiological 
+analysis could replace our literature-based estimates.
+
+**5. Adaptation modeling**
+Scenarios with specific policy interventions (e.g., 20% tree cover 
+by 2035) could be evaluated.
+
+**6. Household-level analysis**
+Surveys of heat exposure and coping strategies would add 
+socioeconomic depth.
+
+**7. Extension to other Bangladeshi cities**
+Similar analysis for Chattogram, Khulna, Rajshahi would reveal 
+whether patterns are Dhaka-specific or national.
