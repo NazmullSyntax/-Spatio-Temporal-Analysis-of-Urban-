@@ -631,3 +631,36 @@ socioeconomic depth.
 **7. Extension to other Bangladeshi cities**
 Similar analysis for Chattogram, Khulna, Rajshahi would reveal 
 whether patterns are Dhaka-specific or national.
+
+
+### 5.15 Summary
+
+This discussion has interpreted the results of a 25-year analysis 
+of urban heat in Dhaka. The key discussion points are:
+
+1. **Urban heat intensification is real and significant** — Dhaka 
+   warmed by 1.24°C (daytime) and 1.94°C (nighttime) from 2000 to 2025
+
+2. **Built-up intensity is the dominant driver** — NDBI explains 55% 
+   of model predictions; r = 0.613 with LST
+
+3. **Vegetation's role is complex** — strong nighttime cooling 
+   (r = -0.431) despite weak daytime effects
+
+4. **The 2030 scenario is concerning** — +0.25°C additional warming, 
+   +51% exposed population, $186M USD annual burden
+
+5. **Policy implications are clear** — urban greening, cool roofs, 
+   water preservation, heat warning systems
+
+6. **Limitations are documented** — data availability, small sample, 
+   coefficient sources, business-as-usual assumption
+
+7. **Reproducibility is emphasized** — open code and data enable 
+   verification and extension
+
+The discussion establishes that urban heat in Dhaka is a measurable, 
+growing, and policy-relevant challenge. The findings provide 
+scientific evidence to inform planning, but do not replace the need 
+for detailed epidemiological, economic, and engineering analyses. 
+This thesis is offered as a contribution to that broader effort.
