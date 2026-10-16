@@ -491,3 +491,17 @@ This is a model prediction, not a temperature measurement from 2030. The reliabi
 6. Overall Conclusion
 The results show that Gradient Boosting performed best overall by R² and RMSE among the three tested models. NDBI was the most influential feature, followed by NDVI in two of the models. The predicted mean LST for Dhaka's grid cells in 2030 is 26.53°C.
 These findings are preliminary model results. They should not yet be interpreted as proof of future temperature changes caused by green-space loss.
+
+# command to run this project in vs code 
+venv\Scripts\activate
+python 02_code/python/09_merge_population.py
+python 02_code/python/10_statistical_analysis.py
+python 02_code/python/11_machine_learning.py
+python 02_code/python/14_predict_2030_full.py
+python 02_code/python/16_population_exposure_fixed.py
+python 02_code/python/17_health_impact.py
+python 02_code/python/18_economic_impact.py
+python -c "import pandas as pd; print('MASTER:', pd.read_csv('01_data/master/dhaka_green_space_master.csv').shape); print('MODEL:', pd.read_csv('03_results/tables/model_comparison.csv').to_string()); print('2030 LST:', pd.read_csv('03_results/prediction_2030.csv')['LST_2030_pred'].mean().round(2), 'C')"
+
+
+
