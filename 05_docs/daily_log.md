@@ -205,3 +205,28 @@ projects/dhaka-green-space-thesis/assets/dhaka_boundary_shp
 ### Next (Day 11)
 - Complete Chapter 4 (Results)
 - Organize tables and figures
+
+
+## Day 12
+### Done
+- Chapter 5 (Discussion) written completely
+- 15 sections covering:
+  - Urban heat intensification
+  - Built-up dominance
+  - Vegetation ambiguity
+  - Literature comparison
+  - ML insights
+  - 2030 scenario
+  - Health/economic implications
+  - Policy recommendations
+  - Limitations
+  - Future research
+- ~3,500 words written
+
+### Files Created
+- 04_thesis/chapters/chapter5_discussion.md
+
+### Next (Day 13)
+- Chapter 6 (Conclusion)
+- Abstract
+- References
