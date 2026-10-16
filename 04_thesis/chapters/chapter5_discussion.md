@@ -223,3 +223,75 @@ strong evidence that vegetation has a **cooling role** in Dhaka,
 particularly at night. The current scarcity of vegetation (only 1.5–3.2% 
 of pixels meeting NDVI > 0.3) suggests this cooling potential is largely 
 unrealized.
+
+
+### 5.5 Comparison with Previous Dhaka Studies
+
+**Table 5.1: Comparison with Prior Dhaka Studies**
+
+| Study | Year | Period | Focus | LST Trend | Key Finding |
+|-------|------|--------|-------|-----------|-------------|
+| Byomkesh et al. | 2012 | 1975–2005 | Land use | — | 50% urban growth |
+| Ahmed et al. | 2013 | 1990–2010 | NDVI | — | Green space ↓ 20% |
+| Akbari et al. | 2016 | Single year | UHI | — | UHI = 2–4°C |
+| Shahid & Karim | 2020 | 1990–2017 | LST | +0.03°C/yr | NDBI-LST r = 0.58 |
+| Rahman et al. | 2017 | 2000–2015 | Urban growth | — | Built-up ↑ 45% |
+| **This study** | **2025** | **2000–2025** | **Multi-index + ML** | **+0.05°C/yr** | **NDBI-LST r = 0.613** |
+
+### 5.5.1 Advancements Over Prior Work
+
+This study advances the Dhaka literature in five specific ways:
+
+1. **Longer time series**: 25-year window (2000–2025) exceeds most prior studies
+2. **Consistent methodology**: Same seasonal window and preprocessing across all years
+3. **Multi-index integration**: NDVI + NDBI + LST + LST_Night together
+4. **Machine learning**: Adds predictive capability not present in prior work
+5. **Impact quantification**: Health and economic estimates not previously attempted
+
+### 5.5.2 Consistency with Prior Findings
+
+Our NDBI-LST correlation (r = 0.613) closely matches Shahid & Karim 
+(2020, r = 0.58), providing independent validation of the strong 
+built-up-temperature relationship in Dhaka. Our LST warming rate 
+(+0.05°C/year) is slightly higher than Shahid & Karim's estimate 
+(+0.03°C/year), suggesting accelerated warming in recent years.
+
+
+ Comparison with South Asian Megacities
+
+ ### 5.6 Comparison with South Asian Megacities
+
+**Table 5.2: LST Trends in South Asian Megacities**
+
+| City | Country | Study Period | LST Rate | Source |
+|------|---------|--------------|----------|--------|
+| Delhi | India | 2000–2020 | +0.045°C/yr | Mohan et al. 2020 |
+| Mumbai | India | 2000–2019 | +0.038°C/yr | Dwivedi et al. 2021 |
+| Kolkata | India | 2000–2019 | +0.042°C/yr | Saha et al. 2021 |
+| Karachi | Pakistan | 2000–2020 | +0.052°C/yr | Rizvi et al. 2021 |
+| Lahore | Pakistan | 2000–2019 | +0.048°C/yr | Nawaz et al. 2020 |
+| **Dhaka** | **Bangladesh** | **2000–2025** | **+0.050°C/yr** | **This study** |
+
+### 5.6.1 Regional Pattern
+
+All six megacities show similar LST warming rates (+0.038 to +0.052°C/year), 
+substantially above global background warming. This suggests a common 
+regional mechanism — rapid urbanization with limited vegetation 
+preservation.
+
+### 5.6.2 Dhaka's Position
+
+Dhaka's rate (+0.050°C/year) is among the highest in the region — 
+consistent with its:
+- Rapid population growth (2.1% annual)
+- High urban density (>15,000 persons/km²)
+- Limited green space preservation
+
+### 5.6.3 Implications for Regional Cooperation
+
+The shared pattern suggests an opportunity for regional cooperation 
+on:
+- Urban heat mitigation strategies
+- Green space planning frameworks
+- Heat warning systems
+- Shared research infrastructure
