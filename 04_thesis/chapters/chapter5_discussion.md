@@ -524,3 +524,51 @@ Implementation would require:
 - Community consultation
 - Coordination across multiple agencies
 - Monitoring and evaluation frameworks
+
+
+
+### 5.12 Limitations and Uncertainties
+
+### 5.12.1 Data Limitations
+
+**Spatial resolution**: 30m Landsat may miss small features
+
+**Low NDVI signal**: Absolute values (0.10–0.18) reflect urban density; 
+relative trends are more meaningful than absolute values
+
+**Nighttime LST coverage**: MODIS 1km resolution necessitated filling 
+~74% of grid cells with imputed values
+
+**Population distribution**: Uniform population distribution per grid 
+cell is a simplification
+
+### 5.12.2 Methodological Limitations
+
+**Small sample size**: Six time points limit statistical power
+
+**Correlation ≠ causation**: All relationships are associations
+
+**Model generalization**: ML trained on past data may not apply 
+to future conditions
+
+**Extrapolation**: 2030 prediction is 5 years beyond last data point
+
+**Coefficient sources**: Health/economic coefficients from global 
+literature may not perfectly fit Dhaka
+
+### 5.12.3 Scenario Limitations
+
+**Business-as-usual assumption**: Prediction assumes no policy changes
+
+**No climate feedbacks**: Global warming impacts on Dhaka's local 
+climate not modeled
+
+**No adaptation**: Behavior changes (AC adoption, migration) not modeled
+
+### 5.12.4 How Limitations Are Addressed
+
+Throughout this thesis:
+- All claims are framed as associations or estimates
+- Uncertainty ranges are reported where possible
+- Limitations are documented in each chapter
+- Code and data are publicly available for reproducibility
