@@ -160,3 +160,66 @@ UHI intensity measures the temperature difference between urban and
 rural reference areas. Our analysis measures within-urban temperature 
 variation. Both are valid, but they answer different questions. This 
 study specifically addresses intra-urban heat inequality.
+
+### 5.4 The Ambiguous Role of Vegetation
+
+The role of vegetation in Dhaka's thermal environment is more complex 
+than initial analysis suggests.
+
+### 5.4.1 Weak Daytime but Strong Nighttime Relationship
+
+NDVI and LST showed only weak negative correlation at the pixel level 
+(r = -0.083). Yet NDVI and nighttime LST showed a much stronger 
+negative correlation (r = -0.431).
+
+This pattern reveals an important asymmetry:
+
+- **Daytime**: Mixed pixels dilute NDVI signal; direct solar heating 
+  dominates LST
+- **Nighttime**: Vegetation's absence of thermal mass means it does 
+  not retain heat, allowing cooler temperatures
+
+The nighttime relationship is **more policy-relevant** because nighttime 
+heat stress is linked to adverse health outcomes.
+
+### 5.4.2 The Anomalously Low NDVI Values
+
+The mean NDVI of 0.10–0.18 in Dhaka District is substantially lower 
+than typical urban areas (0.30–0.45). This reflects two factors:
+
+1. **Real urban density**: Dhaka has limited green space relative to 
+   its population and area
+2. **Mixed pixel problem**: At 30m resolution, most pixels contain 
+   a mixture of vegetation and built surfaces
+
+Byomkesh et al. (2012) also reported low NDVI values for Dhaka 
+(0.15–0.25), confirming that this is a characteristic of the city, 
+not an artifact of our methodology.
+
+### 5.4.3 The Positive NDVI Coefficient in Regression
+
+The multiple regression produced a **positive** coefficient for NDVI 
+(+13.00), which appears counterintuitive — vegetation should cool 
+surfaces, not warm them. This is explained by **multicollinearity**:
+
+In Dhaka, NDVI and NDBI are negatively correlated with each other 
+(vegetated areas are less built-up). When both are in the model, 
+the coefficient for NDVI captures the residual effect after 
+accounting for NDBI. This residual effect can be positive because:
+
+- Areas with moderate NDVI but low NDBI (e.g., wetlands, agricultural 
+  land on the urban fringe) can be warmer than expected
+- The "vegetation" detected at some NDVI values may include 
+  water or mixed surfaces
+
+This is a **statistical caveat**, not evidence that vegetation causes 
+warming. The univariate correlation (r = -0.083) is the more honest 
+indicator of the vegetation-temperature relationship.
+
+### 5.4.4 Vegetation's True Role
+
+Despite the anomalies, the nighttime correlation (r = -0.431) provides 
+strong evidence that vegetation has a **cooling role** in Dhaka, 
+particularly at night. The current scarcity of vegetation (only 1.5–3.2% 
+of pixels meeting NDVI > 0.3) suggests this cooling potential is largely 
+unrealized.
