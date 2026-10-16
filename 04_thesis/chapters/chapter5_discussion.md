@@ -373,3 +373,6 @@ would predict approximately **+1.5°C additional warming** by 2050
 (relative to 2025). However, 25-year extrapolation carries 
 substantial uncertainty and is not recommended as a primary 
 planning target.
+
+letts go 
+Health and Economic Implications
