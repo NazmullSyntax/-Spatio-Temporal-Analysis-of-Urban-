@@ -295,3 +295,81 @@ on:
 - Green space planning frameworks
 - Heat warning systems
 - Shared research infrastructure
+
+
+### 5.7 Machine Learning Insights
+
+### 5.7.1 Model Performance
+
+The Gradient Boosting model achieved R² = 0.741, meaning 74% of LST 
+variation is explained by five features (NDVI, NDBI, LST_Night, 
+Population, Year). This is at the upper end of what is typically 
+reported in urban LST prediction literature (Zhou et al., 2020).
+
+### 5.7.2 Why Ensemble Methods Outperformed Regression
+
+Multiple linear regression explained only 52% of LST variation 
+(R² = 0.522), while ML models explained 74%. The improvement 
+comes from ML's ability to capture:
+
+- **Non-linear relationships**: LST does not respond linearly to features
+- **Interactions**: NDBI × Population, NDVI × LST_Night
+- **Threshold effects**: Some features matter more above certain values
+
+### 5.7.3 Feature Importance as Scientific Insight
+
+The dominance of NDBI (55% importance) is not just a technical 
+result — it quantifies the urban heat mechanism. Built-up intensity 
+is the primary driver, and its effect can be quantified as:
+- Every 0.1 increase in NDBI → approximately +3.6°C LST
+
+This is a policy-actionable number: neighborhoods can be ranked by 
+NDBI and heat mitigation prioritized accordingly.
+
+### 5.7.4 Caution About Feature Importance
+
+Feature importance in tree-based models reflects predictive 
+contribution, not causal effect. NDBI's importance does not mean 
+"NDBI causes 55% of warming" — it means "NDBI explains 55% of the 
+model's predictions." This nuance should be carefully communicated.
+
+
+### 5.8 The 2030 Scenario
+
+### 5.8.1 The Headline Number
+
+Under a business-as-usual scenario, the model predicts a mean LST of 
+**26.53°C by 2030** — a +0.25°C increase over 2025 (95% CI: 0.24–0.27°C).
+
+### 5.8.2 Interpretation of Magnitude
+
++0.25°C over 5 years = +0.050°C/year, matching the observed 2000–2025 
+rate. The prediction assumes:
+- Continuation of current urbanization trends
+- No major policy interventions
+- No unexpected climate surprises
+
+### 5.8.3 Why This Magnitude Matters
+
+While 0.25°C may sound small, it is important because:
+1. It **adds to** the +1.24°C already observed — cumulative warming
+2. It shifts the **entire distribution** — more extreme values
+3. Small mean shifts produce **disproportionate extreme events** 
+   (a 0.25°C mean shift can double the frequency of extreme heat days)
+
+### 5.8.4 Uncertainty Communication
+
+The 95% CI [26.52, 26.55] reflects model precision but not 
+scenario uncertainty. If policy changes (e.g., a major urban 
+greening program), the actual 2030 LST could be lower. If 
+climate surprises occur (e.g., accelerated warming), it could 
+be higher. The reported prediction is **conditional on the 
+business-as-usual assumption**.
+
+### 5.8.5 Extension to 2050
+
+While not the primary target, an extension of the same rate to 2050 
+would predict approximately **+1.5°C additional warming** by 2050 
+(relative to 2025). However, 25-year extrapolation carries 
+substantial uncertainty and is not recommended as a primary 
+planning target.
