@@ -376,3 +376,47 @@ planning target.
 
 letts go 
 Health and Economic Implications
+
+
+### 5.9 Health Implications
+
+### 5.9.1 Estimated Health Burden (2030)
+
+Using published exposure-response coefficients, we estimate:
+
+| Outcome | 2030 Estimate | Comparison |
+|---------|---------------|------------|
+| Heat-related deaths | 18/year | +52% vs 2025 |
+| Heat-related hospitalizations | 177/year | +51% vs 2025 |
+| Heat-related ED visits | 729/year | +51% vs 2025 |
+
+### 5.9.2 Interpretation
+
+These estimates should be interpreted as **indicative magnitude**, 
+not precise predictions. The 51–52% increase reflects the 51% 
+increase in exposed population — the two are consistent.
+
+### 5.9.3 Vulnerable Populations
+
+Heat does not affect all populations equally. The most vulnerable 
+in Dhaka include:
+- **Outdoor workers** (rickshaw pullers, construction workers, street vendors)
+- **Elderly** (>65 years) — reduced thermoregulation
+- **Children** (<5 years) — higher surface-area-to-volume ratio
+- **Low-income residents** — less access to cooling, poorer housing
+- **Informal settlements** — often lack ventilation and shade
+
+### 5.9.4 Comparison with National Data
+
+While ward-level data are not available, national-level data 
+suggest heat-related mortality is increasing in Bangladesh. 
+Rahman et al. (2019) reported a 15% increase in heat-related 
+hospital admissions over the last decade — consistent with 
+our exposure projections.
+
+### 5.9.5 Caveats
+
+- Estimates use global coefficients applied to Dhaka-specific exposure
+- Do not account for adaptation (AC adoption, behavior change)
+- Do not capture long-term morbidity (chronic kidney disease, mental health)
+- Exclude indirect deaths (cardiovascular events triggered by heat)
