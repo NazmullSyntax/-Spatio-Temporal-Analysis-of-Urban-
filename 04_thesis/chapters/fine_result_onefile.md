@@ -503,5 +503,10 @@ python 02_code/python/17_health_impact.py
 python 02_code/python/18_economic_impact.py
 python -c "import pandas as pd; print('MASTER:', pd.read_csv('01_data/master/dhaka_green_space_master.csv').shape); print('MODEL:', pd.read_csv('03_results/tables/model_comparison.csv').to_string()); print('2030 LST:', pd.read_csv('03_results/prediction_2030.csv')['LST_2030_pred'].mean().round(2), 'C')"
 
+# Final Check — See Everything You Have
+dir 03_results\tables
+dir 03_results\figures
+dir 03_results\maps
+dir 03_results\models
 
 
