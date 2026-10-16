@@ -572,3 +572,34 @@ Throughout this thesis:
 - Uncertainty ranges are reported where possible
 - Limitations are documented in each chapter
 - Code and data are publicly available for reproducibility
+
+
+### 5.13 Contributions to Knowledge
+
+This thesis contributes to the literature in five ways:
+
+**1. Long-term dataset for Dhaka**
+The 25-year, 6,315-cell panel dataset is among the most comprehensive 
+urban environmental datasets for Dhaka.
+
+**2. Multi-index integration**
+Combining NDVI, NDBI, LST, and LST_Night provides a more complete 
+picture than single-index studies.
+
+**3. Machine learning application**
+Gradient Boosting with feature importance quantifies the urban 
+heat mechanism (NDBI = 55% importance).
+
+**4. Forward-looking prediction**
+The 2030 scenario provides a planning horizon for urban policy.
+
+**5. Full reproducibility**
+Open code (GitHub) and documented methodology enable replication 
+and extension.
+
+### 5.13.1 Comparison with Global Literature
+
+While the methods are standard in the global urban heat literature, 
+their application to Dhaka with this scope is novel. The findings 
+contribute Dhaka-specific evidence to the global conversation on 
+urban heat.
