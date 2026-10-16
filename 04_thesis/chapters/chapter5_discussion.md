@@ -473,3 +473,54 @@ Our estimates exclude several important categories:
 
 These exclusions mean the true economic burden is likely **higher** 
 than reported.
+
+
+### 5.11 Policy and Planning Implications
+
+### 5.11.1 Priority Interventions
+
+Based on the analysis, the following interventions are prioritized:
+
+**1. Urban Greening Program**
+- Target high-NDBI neighborhoods with tree planting
+- Focus on nighttime cooling benefits (NDVI-LST_Night r = -0.431)
+- Prioritize pedestrian corridors and school zones
+
+**2. Cool Roofs and Reflective Surfaces**
+- Target areas with high LST (>30°C)
+- Retrofit government buildings, schools, hospitals
+- Mandate cool roof requirements for new construction
+
+**3. Water Body Preservation**
+- Protect remaining wetlands and water bodies
+- Restore filled channels where possible
+- Water provides both cooling and flood protection
+
+**4. Heat Warning Systems**
+- Establish early warning for extreme heat days
+- Target outdoor workers, elderly, and informal settlements
+- Coordinate with health facilities
+
+### 5.11.2 Spatial Targeting
+
+The analysis identifies priority zones:
+- **Central Dhaka** (Motijheel, Paltan): highest NDBI, hottest
+- **Old Dhaka**: dense, old buildings, limited vegetation
+- **Southern industrial zones**: high LST, low-income workers
+
+### 5.11.3 Integration with Existing Plans
+
+The findings support:
+- **Bangladesh Climate Change Strategy (BCCSAP)**
+- **Delta Plan 2100 urban resilience goals**
+- **SDG 11 (Sustainable Cities)** — urban green space
+- **SDG 3 (Health)** — heat-related illness reduction
+
+### 5.11.4 Limitations of Policy Recommendations
+
+These recommendations are based on environmental associations. 
+Implementation would require:
+- Detailed cost-benefit analysis
+- Community consultation
+- Coordination across multiple agencies
+- Monitoring and evaluation frameworks
