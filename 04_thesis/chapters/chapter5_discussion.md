@@ -420,3 +420,56 @@ our exposure projections.
 - Do not account for adaptation (AC adoption, behavior change)
 - Do not capture long-term morbidity (chronic kidney disease, mental health)
 - Exclude indirect deaths (cardiovascular events triggered by heat)
+
+
+### 5.10 Economic Implications
+
+### 5.10.1 Estimated Economic Burden (2030)
+
+| Category | Cost (USD/year) | Share |
+|----------|-----------------|-------|
+| Productivity loss | $180,000,000 | 96.8% |
+| Cooling electricity | $4,000,000 | 2.2% |
+| Health-related | $1,857,473 | 1.0% |
+| **Total** | **$185,857,473** | 100% |
+
+**Per capita**: $7.43 USD/person/year (≈ 815 BDT)
+
+### 5.10.2 Why Productivity Dominates
+
+Worker productivity loss accounts for 96.8% of the total. This 
+reflects:
+
+- **30% outdoor workforce fraction** (7.5 million workers)
+- **2% productivity loss per °C above 30°C**
+- **Total wage bill of $18 billion**
+
+Small percentage losses applied to a large workforce produce 
+large absolute numbers.
+
+### 5.10.3 International Context
+
+The estimated burden of $186M USD/year is:
+- **0.04% of Bangladesh GDP** ($460 billion)
+- **0.7% of Dhaka's economic output** (estimated)
+
+While modest at the national level, this represents significant 
+household-level burden when concentrated among vulnerable workers.
+
+### 5.10.4 Comparison with Other Studies
+
+ILO (2019) estimated South Asian productivity losses from heat at 
+5.3% of working hours by 2030 — our estimate (2% productivity loss) 
+is more conservative but focused on extreme heat days only.
+
+### 5.10.5 Non-Monetized Impacts
+
+Our estimates exclude several important categories:
+- Reduced quality of life (difficult to monetize)
+- Ecosystem service losses
+- Long-term health morbidity
+- Educational impacts on children
+- Reduced tourism and outdoor activity
+
+These exclusions mean the true economic burden is likely **higher** 
+than reported.
