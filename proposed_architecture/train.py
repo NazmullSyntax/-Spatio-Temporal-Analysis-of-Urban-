@@ -14,84 +14,80 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from architecture import STTN_Model
 
 print("=" * 60)
-print("DAY 3: Hyperparameter Tuning - Custom STTN Neural Network")
+print("DAY 7: Final STTN Model Training (Optimized)")
 print("=" * 60)
 
 # 1. Load Data
-# Using the correct relative path for Windows
 data_path = r"C:\Users\nazmu\Documents\demo_project\dhaka-green-space-thesis\01_data\master\dhaka_green_space_master.csv"
 df = pd.read_csv(data_path)
 df = df.dropna(subset=['NDVI', 'NDBI', 'LST', 'LST_Night', 'Population'])
-print(f"Loaded Rows: {len(df)}")
 
-# 2. Features and Target
-feature_cols = ['NDVI', 'NDBI', 'LST_Night', 'Population', 'Year']
+# 2. CREATE SPATIAL LAG FEATURES (Crucial for our new model)
+df = df.sort_values(['Year', 'grid_id'])
+df['LST_neighbor'] = df.groupby('Year')['LST'].shift(1)
+df['NDBI_neighbor'] = df.groupby('Year')['NDBI'].shift(1)
+df = df.dropna()
+
+print(f"Loaded and Feature-Engineered Rows: {len(df)}")
+
+# 3. Features and Target
+feature_cols = ['NDVI', 'NDBI', 'LST_Night', 'Population', 'Year', 'LST_neighbor', 'NDBI_neighbor']
 X = df[feature_cols].values.astype(np.float32)
 y = df['LST'].values.astype(np.float32)
 
-# 3. Split
+# 4. Train-Test Split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# 4. Scale
+# 5. Scale
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-# 5. Convert to PyTorch Tensors
+# 6. Convert to Tensors
 X_train_tensor = torch.tensor(X_train_scaled, dtype=torch.float32)
 y_train_tensor = torch.tensor(y_train, dtype=torch.float32).view(-1, 1)
 X_test_tensor = torch.tensor(X_test_scaled, dtype=torch.float32)
-y_test_tensor = torch.tensor(y_test, dtype=torch.float32).view(-1, 1)
 
-# Create DataLoader for batching
-train_dataset = TensorDataset(X_train_tensor, y_train_tensor)
-train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+train_loader = DataLoader(TensorDataset(X_train_tensor, y_train_tensor), batch_size=32, shuffle=True)
 
-# 6. Initialize Model, Loss, and Optimizer
-model = STTN_Model(input_shape=5)
+# 7. Initialize Final Model
+model = STTN_Model(input_shape=7) # 7 features now!
 criterion = nn.MSELoss()
-# Updated Learning Rate from 0.01 to 0.005 for finer convergence
-optimizer = optim.Adam(model.parameters(), lr=0.005) 
+optimizer = optim.Adam(model.parameters(), lr=0.005)
 
-# 7. Training Loop
-print("\nStarting Training...")
-# Increased Epochs from 50 to 100
-epochs = 100 
+# 8. Train
+print("\nTraining Final Model...")
+epochs = 100
 for epoch in range(epochs):
     model.train()
-    running_loss = 0.0
     for batch_X, batch_y in train_loader:
-        optimizer.zero_grad()       # Clear previous gradients
-        outputs = model(batch_X)    # Forward pass
-        loss = criterion(outputs, batch_y) # Calculate loss
-        loss.backward()             # Backward pass
-        optimizer.step()            # Update weights
-        running_loss += loss.item()
+        optimizer.zero_grad()
+        outputs = model(batch_X)
+        loss = criterion(outputs, batch_y)
+        loss.backward()
+        optimizer.step()
         
-    # Print progress every 10 epochs
-    if (epoch + 1) % 10 == 0:
-        print(f"Epoch [{epoch+1}/{epochs}], Loss: {running_loss/len(train_loader):.4f}")
+    if (epoch + 1) % 20 == 0:
+        print(f"Epoch [{epoch+1}/{epochs}] completed.")
 
-# 8. Evaluation
-print("\nEvaluating Model...")
+# 9. Evaluate
 model.eval()
 with torch.no_grad():
-    y_pred_tensor = model(X_test_tensor)
-    y_pred = y_pred_tensor.numpy().flatten()
+    y_pred = model(X_test_tensor).numpy().flatten()
 
 mae = mean_absolute_error(y_test, y_pred)
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 r2 = r2_score(y_test, y_pred)
 
 print("\n" + "=" * 60)
-print("STTN NEURAL NETWORK RESULTS (TUNED)")
+print("FINAL STTN MODEL RESULTS (Random Split)")
 print("=" * 60)
 print(f"MAE:  {mae:.4f}")
 print(f"RMSE: {rmse:.4f}")
 print(f"R²:   {r2:.4f}")
 print("=" * 60)
 
-# 9. Save Model
+# 10. Save Model
 os.makedirs("../03_results/models", exist_ok=True)
-torch.save(model.state_dict(), "../03_results/models/sttn_custom_model_v2.pth")
-print("Model saved to: 03_results/models/sttn_custom_model_v2.pth")
+torch.save(model.state_dict(), "../03_results/models/final_sttn_model.pth")
+print("Final Model saved to: 03_results/models/final_sttn_model.pth")
