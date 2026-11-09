@@ -1,3 +1,11 @@
+"""
+Custom Machine Learning Architecture: Spatio-Temporal Tabular Network (STTN)
+Author: [Your Name]
+Project: Spatio-Temporal Analysis and Future Prediction of Urban Green Space Loss in Dhaka City
+
+Updated on Day 3: Reduced Dropout to 0.1 for better feature retention.
+"""
+
 import torch
 import torch.nn as nn
 
@@ -14,14 +22,14 @@ class STTN_Model(nn.Module):
             nn.Linear(input_shape, 64),
             nn.BatchNorm1d(64),
             nn.ReLU(),
-            nn.Dropout(0.2)
+            nn.Dropout(0.1) # Updated from 0.2 to 0.1
         )
         
         # 2. Second Hidden Layer (Deep Relationship)
         self.layer2 = nn.Sequential(
             nn.Linear(64, 32),
             nn.ReLU(),
-            nn.Dropout(0.2)
+            nn.Dropout(0.1) # Updated from 0.2 to 0.1
         )
         
         # 3. Third Hidden Layer (Compression)

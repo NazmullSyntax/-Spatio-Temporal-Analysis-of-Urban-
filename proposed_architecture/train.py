@@ -14,10 +14,11 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from architecture import STTN_Model
 
 print("=" * 60)
-print("DAY 2: Training Custom STTN Neural Network (PyTorch)")
+print("DAY 3: Hyperparameter Tuning - Custom STTN Neural Network")
 print("=" * 60)
 
 # 1. Load Data
+# Using the correct relative path for Windows
 data_path = r"C:\Users\nazmu\Documents\demo_project\dhaka-green-space-thesis\01_data\master\dhaka_green_space_master.csv"
 df = pd.read_csv(data_path)
 df = df.dropna(subset=['NDVI', 'NDBI', 'LST', 'LST_Night', 'Population'])
@@ -49,11 +50,13 @@ train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
 # 6. Initialize Model, Loss, and Optimizer
 model = STTN_Model(input_shape=5)
 criterion = nn.MSELoss()
-optimizer = optim.Adam(model.parameters(), lr=0.01)
+# Updated Learning Rate from 0.01 to 0.005 for finer convergence
+optimizer = optim.Adam(model.parameters(), lr=0.005) 
 
 # 7. Training Loop
 print("\nStarting Training...")
-epochs = 50
+# Increased Epochs from 50 to 100
+epochs = 100 
 for epoch in range(epochs):
     model.train()
     running_loss = 0.0
@@ -65,6 +68,7 @@ for epoch in range(epochs):
         optimizer.step()            # Update weights
         running_loss += loss.item()
         
+    # Print progress every 10 epochs
     if (epoch + 1) % 10 == 0:
         print(f"Epoch [{epoch+1}/{epochs}], Loss: {running_loss/len(train_loader):.4f}")
 
@@ -80,7 +84,7 @@ rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 r2 = r2_score(y_test, y_pred)
 
 print("\n" + "=" * 60)
-print("STTN NEURAL NETWORK RESULTS")
+print("STTN NEURAL NETWORK RESULTS (TUNED)")
 print("=" * 60)
 print(f"MAE:  {mae:.4f}")
 print(f"RMSE: {rmse:.4f}")
@@ -89,5 +93,5 @@ print("=" * 60)
 
 # 9. Save Model
 os.makedirs("../03_results/models", exist_ok=True)
-torch.save(model.state_dict(), "../03_results/models/sttn_custom_model.pth")
-print("Model saved to: 03_results/models/sttn_custom_model.pth")
+torch.save(model.state_dict(), "../03_results/models/sttn_custom_model_v2.pth")
+print("Model saved to: 03_results/models/sttn_custom_model_v2.pth")
