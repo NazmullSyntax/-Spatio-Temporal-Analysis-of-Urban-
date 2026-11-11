@@ -14,15 +14,15 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from architecture import STTN_Model
 
 print("=" * 60)
-print("DAY 7: Final STTN Model Training (Optimized)")
+print("TRAINING FINAL STTN MODEL (Absolute Paths)")
 print("=" * 60)
 
-# 1. Load Data
+# 1. Load Data using Absolute Path
 data_path = r"C:\Users\nazmu\Documents\demo_project\dhaka-green-space-thesis\01_data\master\dhaka_green_space_master.csv"
 df = pd.read_csv(data_path)
 df = df.dropna(subset=['NDVI', 'NDBI', 'LST', 'LST_Night', 'Population'])
 
-# 2. CREATE SPATIAL LAG FEATURES (Crucial for our new model)
+# 2. Create Spatial Lags
 df = df.sort_values(['Year', 'grid_id'])
 df['LST_neighbor'] = df.groupby('Year')['LST'].shift(1)
 df['NDBI_neighbor'] = df.groupby('Year')['NDBI'].shift(1)
@@ -51,7 +51,7 @@ X_test_tensor = torch.tensor(X_test_scaled, dtype=torch.float32)
 train_loader = DataLoader(TensorDataset(X_train_tensor, y_train_tensor), batch_size=32, shuffle=True)
 
 # 7. Initialize Final Model
-model = STTN_Model(input_shape=7) # 7 features now!
+model = STTN_Model(input_shape=7)
 criterion = nn.MSELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.005)
 
@@ -87,7 +87,11 @@ print(f"RMSE: {rmse:.4f}")
 print(f"R²:   {r2:.4f}")
 print("=" * 60)
 
-# 10. Save Model
-os.makedirs("../03_results/models", exist_ok=True)
-torch.save(model.state_dict(), "../03_results/models/final_sttn_model.pth")
-print("Final Model saved to: 03_results/models/final_sttn_model.pth")
+# 10. Save Model using ABSOLUTE PATH
+model_save_path = r"C:\Users\nazmu\Documents\demo_project\dhaka-green-space-thesis\03_results\models\final_sttn_model.pth"
+
+# Create folder if it doesn't exist
+os.makedirs(os.path.dirname(model_save_path), exist_ok=True)
+
+torch.save(model.state_dict(), model_save_path)
+print(f"Model saved successfully to: {model_save_path}")
